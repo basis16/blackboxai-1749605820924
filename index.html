@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DonghuaWorld - Modern Anime Streaming</title>
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 </head>
 <body class="bg-black text-white font-[Poppins]">
     <!-- Navigation -->
@@ -63,36 +63,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-20 pb-12 px-4">
-        <div class="container mx-auto">
-            <div class="relative rounded-2xl overflow-hidden h-[500px] group">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
-                <img src="/images/placeholder.svg" 
-                     alt="Featured Anime" 
-                     class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
-                     onerror="this.src='/images/placeholder.svg'">
-                <div class="absolute bottom-0 left-0 p-8 z-20">
-                    <span class="inline-block px-4 py-1 bg-red-600 text-white rounded-full text-sm mb-4">Featured</span>
-                    <h1 class="text-4xl font-bold text-white mb-2">Necromancer! I'm the King of Calamity</h1>
-                    <p class="text-gray-300 mb-4">Episode 110-111 Multi-Subtitles</p>
-                    <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full transition-colors flex items-center space-x-2">
-                        <i class="fas fa-play"></i>
-                        <span>Watch Now</span>
-                    </button>
-                </div>
+    <section class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="images/placeholder.svg" alt="Hero Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+        </div>
+        <div class="relative h-full flex items-center">
+            <div class="container mx-auto px-4">
+                <span class="inline-block px-4 py-2 bg-red-600 text-white rounded-full mb-4">Featured</span>
+                <h1 class="text-5xl font-bold mb-4 max-w-2xl">Necromancer! I'm the King of Calamity</h1>
+                <p class="text-gray-300 text-lg mb-8 max-w-2xl">Episode 110-111 Multi-Subtitles</p>
+                <a href="post/necromancer.html" class="inline-flex items-center space-x-2 px-8 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
+                    <i class="fas fa-play"></i>
+                    <span>Watch Now</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Latest Episodes -->
-    <section class="py-12 px-4">
-        <div class="container mx-auto">
+    <section class="py-16">
+        <div class="container mx-auto px-4">
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-2xl font-bold flex items-center">
                     <span class="w-2 h-8 bg-red-600 rounded-full mr-4"></span>
                     Latest Episodes
                 </h2>
-                <a href="/all-episodes" class="text-red-600 hover:text-red-500 transition-colors flex items-center space-x-2">
+                <a href="#" class="text-red-500 hover:text-red-600 transition-colors flex items-center space-x-1">
                     <span>View All</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
@@ -107,10 +104,10 @@
                                 <span>Watch Now</span>
                             </button>
                         </div>
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Swallowed Star" 
                              class="w-full h-[300px] object-cover"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute top-4 left-4 z-20">
                             <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm">EP 175</span>
                         </div>
@@ -128,10 +125,10 @@
                                 <span>Watch Now</span>
                             </button>
                         </div>
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Stellar Transformations" 
                              class="w-full h-[300px] object-cover"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute top-4 left-4 z-20">
                             <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm">EP 15</span>
                         </div>
@@ -149,10 +146,10 @@
                                 <span>Watch Now</span>
                             </button>
                         </div>
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Renegade Immortal" 
                              class="w-full h-[300px] object-cover"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute top-4 left-4 z-20">
                             <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm">EP 92</span>
                         </div>
@@ -170,10 +167,10 @@
                                 <span>Watch Now</span>
                             </button>
                         </div>
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Tales of Herding Gods" 
                              class="w-full h-[300px] object-cover"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute top-4 left-4 z-20">
                             <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm">EP 34</span>
                         </div>
@@ -186,14 +183,14 @@
     </section>
 
     <!-- Popular Series -->
-    <section class="py-12 px-4 bg-gray-900/50">
-        <div class="container mx-auto">
+    <section class="py-16 bg-gray-900/30">
+        <div class="container mx-auto px-4">
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-2xl font-bold flex items-center">
                     <span class="w-2 h-8 bg-red-600 rounded-full mr-4"></span>
                     Popular Series
                 </h2>
-                <a href="/popular" class="text-red-600 hover:text-red-500 transition-colors flex items-center space-x-2">
+                <a href="#" class="text-red-500 hover:text-red-600 transition-colors flex items-center space-x-1">
                     <span>View All</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
@@ -202,10 +199,10 @@
                 <!-- Series Card 1 -->
                 <div class="group cursor-pointer">
                     <div class="relative rounded-lg overflow-hidden mb-4">
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Stellar Transformations" 
                              class="w-full h-[200px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <div class="absolute bottom-4 left-4 right-4">
                                 <span class="text-red-500 text-xs">Season 6</span>
@@ -219,10 +216,10 @@
                 <!-- Series Card 2 -->
                 <div class="group cursor-pointer">
                     <div class="relative rounded-lg overflow-hidden mb-4">
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Battle Through the Heavens" 
                              class="w-full h-[200px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <div class="absolute bottom-4 left-4 right-4">
                                 <span class="text-red-500 text-xs">Season 4</span>
@@ -236,10 +233,10 @@
                 <!-- Series Card 3 -->
                 <div class="group cursor-pointer">
                     <div class="relative rounded-lg overflow-hidden mb-4">
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Perfect World" 
                              class="w-full h-[200px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <div class="absolute bottom-4 left-4 right-4">
                                 <span class="text-red-500 text-xs">Season 2</span>
@@ -253,10 +250,10 @@
                 <!-- Series Card 4 -->
                 <div class="group cursor-pointer">
                     <div class="relative rounded-lg overflow-hidden mb-4">
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Soul Land" 
                              class="w-full h-[200px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <div class="absolute bottom-4 left-4 right-4">
                                 <span class="text-red-500 text-xs">Season 8</span>
@@ -270,10 +267,10 @@
                 <!-- Series Card 5 -->
                 <div class="group cursor-pointer">
                     <div class="relative rounded-lg overflow-hidden mb-4">
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Martial Universe" 
                              class="w-full h-[200px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <div class="absolute bottom-4 left-4 right-4">
                                 <span class="text-red-500 text-xs">Season 3</span>
@@ -287,10 +284,10 @@
                 <!-- Series Card 6 -->
                 <div class="group cursor-pointer">
                     <div class="relative rounded-lg overflow-hidden mb-4">
-                        <img src="/images/placeholder.svg" 
+                        <img src="images/placeholder.svg" 
                              alt="Against the Gods" 
                              class="w-full h-[200px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='/images/placeholder.svg'">
+                             onerror="this.src='images/placeholder.svg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <div class="absolute bottom-4 left-4 right-4">
                                 <span class="text-red-500 text-xs">Season 1</span>
@@ -326,8 +323,8 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="/privacy" class="text-gray-400 hover:text-red-500 transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="text-gray-400 hover:text-red-500 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition-colors">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div>
