@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z Lists - DonghuaWorld</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+</head>
+<body class="bg-black text-white font-[Poppins]">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-red-600/20">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-8 bg-red-600 rounded-full"></div>
+                    <a href="/" class="text-2xl font-bold text-white">Donghua<span class="text-red-600">World</span></a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-white hover:text-red-500 transition-colors">Home</a>
+                    <a href="/schedule.html" class="text-white hover:text-red-500 transition-colors">Schedule</a>
+                    <a href="/networks.html" class="text-white hover:text-red-500 transition-colors">Networks</a>
+                    <a href="/a-z-lists.html" class="text-red-500 transition-colors">A-Z Lists</a>
+                    <a href="/bookmark.html" class="text-white hover:text-red-500 transition-colors">Bookmark</a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex relative">
+                    <input type="text" 
+                           placeholder="Search series..." 
+                           class="bg-gray-900/50 w-64 px-4 py-2 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600 focus:bg-gray-900 transition-all duration-300">
+                    <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-500 transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-black/95 border-t border-red-600/20" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <div class="relative mb-4">
+                    <input type="text" placeholder="Search series..." class="w-full bg-gray-900/50 px-4 py-2 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-600">
+                    <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+                <a href="/" class="block text-white hover:text-red-500">Home</a>
+                <a href="/schedule.html" class="block text-white hover:text-red-500">Schedule</a>
+                <a href="/networks.html" class="block text-white hover:text-red-500">Networks</a>
+                <a href="/a-z-lists.html" class="block text-red-500">A-Z Lists</a>
+                <a href="/bookmark.html" class="block text-white hover:text-red-500">Bookmark</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- A-Z Lists Header -->
+    <section class="pt-24 pb-8 px-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="w-2 h-8 bg-red-600 rounded-full mr-4"></span>
+                A-Z Lists
+            </h1>
+
+            <!-- Alphabet Filter -->
+            <div class="flex flex-wrap gap-2 mb-8">
+                <button class="w-10 h-10 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">All</button>
+                <button class="w-10 h-10 bg-gray-900 text-white rounded-lg hover:bg-red-600 transition-colors">A</button>
+                <button class="w-10 h-10 bg-gray-900 text-white rounded-lg hover:bg-red-600 transition-colors">B</button>
+                <button class="w-10 h-10 bg-gray-900 text-white rounded-lg hover:bg-red-600 transition-colors">C</button>
+                <!-- Add more letters -->
+                <button class="w-10 h-10 bg-gray-900 text-white rounded-lg hover:bg-red-600 transition-colors">#</button>
+            </div>
+
+            <!-- Series Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Series Card -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-lg overflow-hidden mb-4">
+                        <img src="/images/placeholder.svg" 
+                             alt="Against the Gods" 
+                             class="w-full h-[280px] object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <span class="text-red-500 text-xs">Season 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-medium text-sm group-hover:text-red-500 transition-colors">Against the Gods</h3>
+                    <p class="text-gray-400 text-xs mt-1">18 Episodes</p>
+                </div>
+
+                <!-- Series Card -->
+                <div class="group cursor-pointer">
+                    <div class="relative rounded-lg overflow-hidden mb-4">
+                        <img src="/images/placeholder.svg" 
+                             alt="Battle Through the Heavens" 
+                             class="w-full h-[280px] object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <span class="text-red-500 text-xs">Season 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-medium text-sm group-hover:text-red-500 transition-colors">Battle Through the Heavens</h3>
+                    <p class="text-gray-400 text-xs mt-1">36 Episodes</p>
+                </div>
+
+                <!-- More series cards... -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="px-8 py-3 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-red-600/20 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-2 h-8 bg-red-600 rounded-full"></div>
+                        <h3 class="text-xl font-bold">Donghua<span class="text-red-600">World</span></h3>
+                    </div>
+                    <p class="text-gray-400">Your premier destination for Chinese animation and donghua streaming.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/schedule.html" class="text-gray-400 hover:text-red-500 transition-colors">Schedule</a></li>
+                        <li><a href="/networks.html" class="text-gray-400 hover:text-red-500 transition-colors">Networks</a></li>
+                        <li><a href="/a-z-lists.html" class="text-gray-400 hover:text-red-500 transition-colors">A-Z Lists</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="text-gray-400 hover:text-red-500 transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-red-500 transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-red-500 transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-telegram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-discord text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-red-600/20 text-center text-gray-400">
+                <p>&copy; 2024 DonghuaWorld. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" 
+            class="fixed bottom-8 right-8 bg-red-600 text-white p-4 rounded-full shadow-lg opacity-0 pointer-events-none transform translate-y-10 transition-all duration-300 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
